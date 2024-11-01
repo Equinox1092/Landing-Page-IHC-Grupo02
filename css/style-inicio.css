@@ -97,7 +97,7 @@ h2{
     left: -15%;
 }
 .inicio-sesions {
-    margin-top: 100px; /* Ajusta el valor según necesites */
+    margin-top: 100px; 
 }
 .container {
     padding: 20px 30px 120px;
@@ -189,4 +189,60 @@ form .btn:hover{
     width: 60rem; 
     height: 50rem; 
     transform: translate(0, -280px); 
+}
+
+@media (max-width: 768px) {
+    html {
+        font-size: 56.25%;
+    }
+
+    body {
+        padding: 0 10px;
+    }
+
+    nav {
+        padding: 0 20px; 
+    }
+
+    nav .links a {
+        font-size: 1.4rem; 
+        margin-right: 10px; 
+    }
+
+    .container {
+        width: 95%; 
+        padding: 15px; 
+    }
+
+    .inicio-sesions h2 {
+        font-size: 2.5rem; 
+    }
+
+    .boton-inicio button {
+        font-size: 14px;
+    }
+
+    form input {
+        font-size: 14px; 
+    }
+}
+
+@media (max-width: 480px) {
+    body {
+        flex-direction: column; 
+    }
+
+    nav {
+        flex-direction: column; 
+        align-items: flex-start;
+    }
+
+    nav .links {
+        margin-bottom: 10px; 
+    }
+
+    header {
+        flex-direction: column; 
+        align-items: center; 
+    }
 }

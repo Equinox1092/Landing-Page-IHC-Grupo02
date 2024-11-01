@@ -1,10 +1,10 @@
 document.addEventListener('DOMContentLoaded', () => {
     const fadeElements = document.querySelectorAll('.fade-in');
     const zoomElements = document.querySelectorAll('.zoom-in');
-    const slideElements = document.querySelectorAll('.slide-in-left'); // Selecciona los elementos con slide-in
+    const slideElements = document.querySelectorAll('.slide-in-left'); 
 
     const showElements = () => {
-        const triggerBottom = window.innerHeight / 5 * 4; // Punto de activación del scroll
+        const triggerBottom = window.innerHeight / 5 * 4;
 
         fadeElements.forEach((element) => {
             const elementTop = element.getBoundingClientRect().top;
@@ -35,5 +35,5 @@ document.addEventListener('DOMContentLoaded', () => {
     };
 
     window.addEventListener('scroll', showElements);
-    showElements(); // Ejecuta al cargar la página
+    showElements(); 
 });

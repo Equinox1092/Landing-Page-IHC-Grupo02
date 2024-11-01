@@ -384,14 +384,117 @@ header .izquierda p {
 }
 
 .slide-in-left {
-    opacity: 0; /* Comienza invisible */
-    transform: translateX(-100px); /* Empieza desplazado a la izquierda */
-    transition: opacity 0.8s ease-out, transform 0.8s ease-out; /* Transición suave */
+    opacity: 0; 
+    transform: translateX(-100px); 
+    transition: opacity 0.8s ease-out, transform 0.8s ease-out; 
 }
 
-/* Clase que se activa al hacer scroll */
 .slide-in-left-visible {
-    opacity: 1; /* Visible */
-    transform: translateX(0); /* Vuelve a la posición original */
+    opacity: 1; 
+    transform: translateX(0); 
 }
 
+@media (max-width: 768px) {
+    nav {
+        padding: 0 20px;
+        justify-content: space-between;
+    }
+    
+    nav .links {
+        display: none; 
+    }
+    
+    nav .inicio {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+    }
+
+    header {
+        flex-direction: column;
+        padding: 20px;
+        height: auto;
+    }
+
+    header .izquierda {
+        max-width: 100%;
+        text-align: center;
+        padding: 10px;
+    }
+
+    header .izquierda h1 span {
+        font-size: 5rem;
+    }
+
+    header .izquierda p {
+        font-size: 1.4rem;
+        max-width: 90%;
+    }
+
+    .boton-safe {
+        margin-left: 0;
+    }
+
+    .derecha {
+        width: 100%;
+        margin-top: 20px;
+    }
+
+    .cuadros {
+        display: none; 
+    }
+
+    .seccion-nosotros {
+        margin-top: 0;
+        padding: 20px;
+    }
+    
+    .nosotros {
+        padding: 0;
+        margin-top: 50px;
+        text-align: center;
+    }
+
+    .seccion-ayuda {
+        padding: 20px;
+    }
+
+    .preguntas .pregunta {
+        margin-bottom: 20px;
+    }
+
+    .cuadros-ayuda {
+        display: none; 
+    }
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+    nav {
+        padding: 0 40px;
+    }
+
+    header {
+        padding: 40px;
+        flex-direction: column;
+    }
+
+    header .izquierda h1 span {
+        font-size: 7rem;
+    }
+
+    .boton-safe {
+        margin-left: 0;
+    }
+
+    .derecha {
+        width: 80%;
+        margin-top: 20px;
+    }
+
+    .seccion-nosotros, .seccion-ayuda {
+        padding: 40px;
+    }
+
+    .cuadros-ayuda {
+        display: none; 
+    }
+}

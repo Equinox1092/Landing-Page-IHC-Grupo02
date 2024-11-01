@@ -187,3 +187,84 @@ form .btn:hover{
     height: 50rem; 
     transform: translate(0, -280px); 
 }
+
+@media (max-width: 768px) {
+    body {
+        font-size: 1.4rem; 
+    }
+
+    nav {
+        padding: 0 20px; 
+    }
+
+    nav .links {
+        flex-direction: column; 
+        align-items: flex-start; 
+    }
+
+    nav .links a {
+        margin: 10px 0; 
+    }
+
+    .container {
+        width: 90%; 
+        height: auto; 
+        padding: 20px; 
+    }
+
+    .registro {
+        padding: 20px; 
+    }
+
+    h2 {
+        font-size: 2.5rem; 
+        text-align: center; 
+    }
+
+    .boton-inicio {
+        flex-direction: column; 
+    }
+
+    .boton-inicio button {
+        width: 100%; 
+        margin-bottom: 10px; 
+    }
+
+    .separador {
+        flex-direction: column; 
+    }
+
+    .separador .linea {
+        width: 100%; 
+    }
+
+    .cuadro-central {
+        width: 90%; 
+        height: auto; 
+        top: auto;
+        left: auto; 
+        transform: none; 
+    }
+}
+
+@media (max-width: 480px) {
+    h2 {
+        font-size: 2rem; 
+    }
+
+    nav .inicio button {
+        font-size: 1.4rem; 
+    }
+
+    form input {
+        font-size: 14px; 
+    }
+
+    form .btn {
+        font-size: 16px; 
+    }
+
+    .container {
+        padding: 10px; 
+    }
+}
