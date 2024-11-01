@@ -210,7 +210,7 @@ header .izquierda p {
     display: flex; 
     gap: 20px; 
     justify-content: center; 
-}
+}   
 
 .cuadro4 {
     position: absolute;
