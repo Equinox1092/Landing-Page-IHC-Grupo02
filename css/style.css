@@ -158,30 +158,31 @@ header .izquierda p {
 
 .cuadros .cuadro1 {
     width: 33rem;
-    height: 38rem;
+    height: 29.9rem;
     background-color: rgba(255, 255, 255, 0.4);
     border-radius: 1rem;
     margin-top: 10rem;
 }
 .cuadros .cuadro2 {
     width: 32rem;
-    height: 50rem;
+    height: 41.9rem;
     background-color: rgba(255, 255, 255, 0.4);
     border-radius: 1rem;
     margin-top: -2rem;
 }
 .cuadros .cuadro3 {
     width: 32rem;
-    height: 28rem;
+    height: 19.9rem;
     background-color: rgba(255, 255, 255, 0.4);
     border-radius: 1rem;
     margin-top: 20rem;
 }
 #acerca-de {
-    scroll-margin-top: 31vh; 
+    scroll-margin-top: 50vh; 
 }
 .seccion-nosotros{
     margin-top: -30rem; 
+    
 }
 .nosotros {
     padding: 0 80px;
@@ -218,19 +219,19 @@ header .izquierda p {
 
 .cuadro4 {
     position: absolute;
-    top: 200%;
+    top: 100%;
     left: 1%;
     display: flex;
     gap: 2rem;
     z-index: -1;
     width: 300px; 
-    height: 200px; 
+    height: 219px; 
     background-color: #B2FFFF; 
 }
 
 .cuadro5{
     position: absolute;
-    top: 140%;
+    top: -100%;
     left: 49%;
     display: flex;
     gap: 2rem;
@@ -242,7 +243,7 @@ header .izquierda p {
 }
 .cuadro6 {
     position: absolute;
-    top: 200%;
+    top: 108%;
     left: 89.2%;
     display: flex;
     gap: 2rem;
@@ -254,7 +255,7 @@ header .izquierda p {
     
 }
 #ayuda{
-    scroll-margin-top: -50vh;
+    scroll-margin-top: -23.5vh;
 }
 .seccion-ayuda {
     padding: 5rem 80px;
@@ -269,7 +270,7 @@ header .izquierda p {
     padding: 20px;
     font-size: 1.6rem;
     margin: auto; 
-    top: 25vh; 
+    top: 5vh; 
     left: -7%;
     margin-top: 30vh; 
     margin-bottom: 40px;
@@ -295,7 +296,7 @@ header .izquierda p {
 .cuadro7 {
     position: absolute;
     background-color: #80DAEB;
-    top: 310vh; 
+    top: 107.2vh; 
     left: 4%;
     z-index: 0; 
     transform: translate(-50px, -50px); 
@@ -305,7 +306,7 @@ header .izquierda p {
     position: absolute;
     background-color: #80DAEB;
     z-index: 0; 
-    top: 310vh; 
+    top: 107.2vh; 
     right: 2.7%;
     border-radius: 30% 0 0 0;
     transform: translate(50px, -50px);
@@ -314,7 +315,7 @@ header .izquierda p {
 .cuadro-central {
     position: absolute;
     background-color: #31AAC1;
-    top: 270vh;
+    top: 40vh;
     left: 10%;
     z-index: 0; 
     width: 150rem; 
@@ -327,6 +328,7 @@ header .izquierda p {
     background-color: rgba(255, 255, 255, 0.4); 
     border-radius: 4rem;
     padding: 30px; 
+
     margin-bottom:-300px; 
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     width: 200%; 
@@ -347,3 +349,49 @@ header .izquierda p {
     color: #023eba;
     margin-bottom: 10px;
 }
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(20px); 
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0); 
+    }
+}
+
+.fade-in {
+    opacity: 0; 
+    transform: translateY(20px);
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out; 
+}
+
+.fade-in-visible {
+    opacity: 1;
+    transform: translateY(0); 
+}
+
+.zoom-in {
+    opacity: 0; 
+    transform: scale(0.8); 
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.zoom-in-visible {
+    opacity: 1; 
+    transform: scale(1); 
+}
+
+.slide-in-left {
+    opacity: 0; /* Comienza invisible */
+    transform: translateX(-100px); /* Empieza desplazado a la izquierda */
+    transition: opacity 0.8s ease-out, transform 0.8s ease-out; /* Transición suave */
+}
+
+/* Clase que se activa al hacer scroll */
+.slide-in-left-visible {
+    opacity: 1; /* Visible */
+    transform: translateX(0); /* Vuelve a la posición original */
+}
+
