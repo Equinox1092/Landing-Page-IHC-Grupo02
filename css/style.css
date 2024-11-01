@@ -178,7 +178,7 @@ header .izquierda p {
     margin-top: 20rem;
 }
 #acerca-de {
-    scroll-margin-top: 31vh; /* Ajusta el valor según sea necesario */
+    scroll-margin-top: 31vh; 
 }
 .seccion-nosotros{
     margin-top: -30rem; 
@@ -260,21 +260,24 @@ header .izquierda p {
     padding: 5rem 80px;
     display: flex;
     flex-direction: column; 
+    max-width: 1200rem; 
+    margin: 0 auto; /
     
 
 }
 .preguntas {
-    padding: 20px 80px;
+    padding: 20px;
     font-size: 1.6rem;
     margin: auto; 
     top: 25vh; 
+    left: -7%;
     margin-top: 30vh; 
     margin-bottom: 40px;
     text-align: center;
     font-weight: 500;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 30px;
+    gap: 300px;
     align-items: center;
     justify-content: space-around;
     position: relative;
@@ -320,43 +323,25 @@ header .izquierda p {
     transform: translate(0, -280px); 
 }
 
-.pregunta1,
-.pregunta2,
-.pregunta3,
-.pregunta4 {
-    background-color: rgba(255, 255, 255, 0.4); /* Fondo para que se destaquen */
+.pregunta{
+    background-color: rgba(255, 255, 255, 0.4); 
     border-radius: 1rem;
-    padding: 20px; /* Espaciado interno */
-    flex: 0 1 45%; /* Ancho de cada div (ajusta este valor para cambiar el tamaño) */
-    margin-bottom:40px; /* Espacio entre filas */
-    margin-right: 50rem;
+    padding: 30px; 
+    margin-bottom:-300px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 200%; 
 }
 
-
-.pregunta1 h2,
-.pregunta2 h2,
-.pregunta3 h2,
-.pregunta4 h2 {
+.pregunta h2 {
     font-size: 1.8rem;
     color: #000;
 }
 
-.pregunta1 p,
-.pregunta2 p,
-.pregunta3 p,
-.pregunta4 p{
+.pregunta p{
     font-size: 1.5rem;
     color: #000;
     margin-bottom: 10px;
 }
-.pregunta1,.pregunta2, .pregunta3,.pregunta4 {
-    margin-right: 1rem; /* Elimina margen derecho en el segundo y cuarto div */
-}
 
 
-.cuadros-nosotros div {
-    width: 30%;
-    height: 15rem;
-    background-color: rgba(255, 255, 255, 0.4);
-    border-radius: 1rem;
-}
+
